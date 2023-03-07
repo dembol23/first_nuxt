@@ -1,7 +1,7 @@
 <template>
   <div>
   <div>
-    <p>Strona główna!!!!!!!</p>
+    <p>Strona główna!!!!!!!!!</p>
   </div>
   <div>
     <nuxt-link to="/produkty/">produkty</nuxt-link>
