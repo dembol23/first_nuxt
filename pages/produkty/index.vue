@@ -1,46 +1,7 @@
 <template>
   <article>
   <div class="products">
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
-    <nuxt-link to="/produkty/krzeslo" class="products__tile">
-      <img src="~/assets/img/produkty/krzeslo.webp" alt="krzeslo" class="products__tile__img">
-      <p class="products__tile__name">Krzesło</p>
-      <p class="products__tile__price">190 zl,-</p>
-    </nuxt-link>
+    <ProductTile id="1" name="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops" price=109.95 img="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"></ProductTile>
   </div>
   </article>
 </template>
