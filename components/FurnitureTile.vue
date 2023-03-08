@@ -3,7 +3,7 @@
         <slot></slot>
     </div>
 </template>
-<style scoped>
+<style lang="scss">
 .furniture-types__tile{
     width: 45%;
     margin: 10px auto;
@@ -15,12 +15,14 @@
     border-radius: 40px;
     background-color: #AED9ED;
     color: #fff;
+
+    &:hover{
+        background-color: #8ecae6;
+        cursor: pointer;
+    }
+    svg{
+        margin: 0 10px;
+    }
 }
-.furniture-types__tile:hover{
-    background-color: #8ecae6;
-    cursor: pointer;
-}
-.furniture-types__tile *{
-    margin: 0 10px;
-}
+
 </style>

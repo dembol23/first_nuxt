@@ -1,5 +1,5 @@
 <template>
-  <article class="article">
+  <article>
     <div class="image">
       <a class="image__text">Najlepsze meble w twojej okolicy</a>
     </div>
@@ -24,7 +24,7 @@
   </article>
 </template>
 
-<style scoped>
+<style lang="scss">
 .image{
     background-image: url("~/assets/img/meble.webp");
     height: 700px;
@@ -34,13 +34,14 @@
     background-size: 100%;
     box-shadow: inset 0 -250px 250px #121212;
     position: relative;
-}
-.image__text{
+
+  &__text{
     font-size: 80px;
     position: absolute;
     bottom: 20px;
     left: 10px;
     color: #fff;
+  }
 }
 .furniture-types{
     width: 80%;

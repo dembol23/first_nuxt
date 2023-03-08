@@ -6,26 +6,26 @@
         <hr>
     </nav>  
 </template>
-<style scoped>
+<style lang="scss">
 .nav{
     background-color: #8ecae6;
     display: flex;
     align-items: center;
     color: #fff;
-}
-.nav__title{
-    font-size: 50px;
-    padding: 0;
-    margin: 0 30px;
-}
-.nav__link{
-    padding: 40px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-decoration: none;
-}
-.nav__link:hover{
-    background-color: #AED9ED;
+    &__title{
+        font-size: 50px;
+        padding: 0;
+        margin: 0 30px;
+    }
+    &__link{
+        padding: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    &__link:hover{
+        background-color: #AED9ED;
+    }
 }
 </style>
