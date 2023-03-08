@@ -1,115 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
-.body{
+body{
     margin: 0;
     width: 100vw;
     height: 100vh;
     background: #fff;
-}
-#main{
-    margin: 0;
     font-family: 'Lexend', sans-serif;
+}
+.article{
     width: 100%;
-    height: 100%;
-}
-#menu{
-    background-color: #8ecae6;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    height: 10%;
-}
-#menu div{
-    padding: 40px;
-}
-#menu > div:first-child{
-    font-size: 50px;
-    padding: 0;
-    margin: 0 30px;
-}
-.link a{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-div.link:hover{
-    background-color: #AED9ED;
-}
-#content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 90%;
-}
-#content > div{
-    width: 100%;
-}
-#image{
-    background-image: url("~/assets/img/meble.webp");
-    height: 700px;
-    width: 100%;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    box-shadow: inset 0 -250px 250px #121212;
-    position: relative;
-}
-#image a{
-    font-size: 80px;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
-    color: #fff;
-}
-.furniture-types{
-    width: 80%;
-    margin:10px 10%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-.furniture-types div{
-    width: 45%;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    padding: 70px 0;
-    border-radius: 40px;
-    background-color: #AED9ED;
-    color: white;
-}
-.furniture-types div:hover{
-    background-color: #8ecae6;
-    cursor: pointer;
-}
-.furniture-types div *{
-    margin: 0 10px;
-}
-#products{
-    width: 80%;
-    margin:50px auto;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.products-tile{
-    width: 250px;
-    height: 350px;
-    border-radius: 15px;
-    margin: 10px 0;
-}
-.products-tile img{
-    width: 100%;
-    border-radius: 15px;
-}
-.products-tile:hover img{
-    transform: scale(1.25);
-    transition-duration: 1s;
-}
-.products-tile p{
-    color: #000;
-    font-size: 20px;
 }
