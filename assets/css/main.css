@@ -3,6 +3,7 @@
     margin: 0;
     width: 100vw;
     height: 100vh;
+    background: #fff;
 }
 #main{
     margin: 0;
@@ -25,21 +26,13 @@
     padding: 0;
     margin: 0 30px;
 }
-nuxt-link{
-    text-decoration: none;
-
-}
 .link a{
-    color: white;
-    text-decoration: underline 0 #8ecae6;
+    color: #fff;
     text-transform: uppercase;
     font-size: 20px;
 }
 div.link:hover{
     background-color: #AED9ED;
-}
-div.link:hover a{
-    text-decoration: underline 0 #AED9ED;
 }
 #content{
     display: flex;
@@ -53,59 +46,70 @@ div.link:hover a{
 }
 #image{
     background-image: url("~/assets/img/meble.webp");
-    height: 900px;
+    height: 700px;
     width: 100%;
-    background-size: cover;
-    background-position: -200px;
-    box-shadow: inset 0 -200px 200px #000;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: inset 0 -250px 250px #121212;
     position: relative;
-    gap: 50px;
-    color: #fff;
-    font-size: 80px;
 }
 #image a{
+    font-size: 80px;
     position: absolute;
     bottom: 20px;
-    right: 200px;
+    left: 10px;
+    color: #fff;
 }
 .furniture-types{
     width: 80%;
-    margin:10px auto;
+    margin:10px 10%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 300px);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .furniture-types div{
-    width: 100%;
+    width: 45%;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 35px;
-    border: 1px solid #000;
     padding: 70px 0;
     border-radius: 40px;
-    background-color: rgba(2, 48, 71,0.7);
+    background-color: #AED9ED;
     color: white;
 }
 .furniture-types div:hover{
-    background-color: rgba(2, 48, 71,1);
+    background-color: #8ecae6;
     cursor: pointer;
+}
+.furniture-types div *{
+    margin: 0 10px;
 }
 #products{
     width: 80%;
-    margin:10px auto;
+    margin:50px auto;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 18%);
-    grid-column-gap: 2%;
-    row-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .products-tile{
-    background-color: red;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    margin: 10px 0;
 }
 .products-tile img{
     width: 100%;
+    border-radius: 15px;
+}
+.products-tile:hover img{
+    transform: scale(1.25);
+    transition-duration: 1s;
+}
+.products-tile p{
+    color: #000;
+    font-size: 20px;
 }
