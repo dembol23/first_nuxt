@@ -14,7 +14,6 @@
   justify-content: space-evenly;
     &__tile{
       width: 250px;
-      // height: 350px;
       border-radius: 15px;
       margin: 10px 20px;
       box-shadow: 0px -10px 53px -13px #BFBFBF;
@@ -25,9 +24,7 @@
       }
       &__img{
         width: 100%;
-        // height: 250px;
         border-radius: 15px;
-        // margin: 0 5%;
       }
       &__name{
         color: #000;

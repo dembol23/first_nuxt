@@ -1,11 +1,11 @@
 <template>
-    <div class="furniture__tile">
+    <div class="furniture-list__tile">
         <slot></slot>
     </div>
 </template>
 
 <style lang="scss">
-.furniture__tile{
+.furniture-list__tile{
     width: 45%;
     margin: 10px auto;
     display: flex;
