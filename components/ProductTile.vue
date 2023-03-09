@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="id" class="products__tile">
+    <nuxt-link :to="productLink" class="products__tile">
       <img :src="img" :alt="name" class="products__tile__img">
       <p class="products__tile__name">{{ name }}</p>
       <p class="products__tile__price">{{ price }} zl,-</p>
@@ -32,7 +32,7 @@
     export default{
         props: {
             id: {
-                type: String,
+                type: Number,
                 required: true
             },
             name: {
@@ -46,6 +46,14 @@
             img: {
                 type: String,
                 required: true
+            }
+
+        },
+        computed: {
+            productLink:{
+                get(){
+                    return "/produkty/" + this.id
+                }
             }
         }
     }
