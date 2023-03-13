@@ -6,7 +6,7 @@
         <div class="product__info">
           <h2 class="product__info__title">{{ product.title }}</h2>
           <h4 class="product__info__description">{{ product.description }}</h4>
-          <h4 class="product__info__price">{{ product.price.toFixed(2) }} zł</h4>
+          <h4 class="product__info__price">{{ product.price }} zł</h4>
         </div>
       </div>
 </template>
@@ -21,6 +21,7 @@
       try{
         const res = await axios.get(api)
         product = res.data
+        product.price = product.price.toFixed(2)
       }
       catch(err){
         console.warn(err)
