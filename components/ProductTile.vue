@@ -1,9 +1,9 @@
 <template>
     <div class="product-tile" >
-      <div class="product-tile__img-wrap"><img :src="img" :alt="title" class="product-tile__img"></div>
-      <div class="product-tile__name-wrap"><nuxt-link :to="productLink" class="product-tile__name">{{ title }}</nuxt-link></div>
-      <div class="product-tile__description-wrap"><p class="product-tile__description">{{ description }}</p></div>
-      <p class="product-tile__price">{{ price }} zl,-</p>
+        <div class="product-tile__img-wrap"><img :src="img" :alt="title" class="product-tile__img"></div>
+        <div class="product-tile__name-wrap"><nuxt-link :to="productLink" class="product-tile__name">{{ title }}</nuxt-link></div>
+        <div class="product-tile__description-wrap"><p class="product-tile__description">{{ description }}</p></div>
+        <p class="product-tile__price">{{ price }} zl,-</p>
     </div>
 </template>
 
@@ -44,6 +44,10 @@
         font-size: 2rem;
         margin-left: 5px;
         text-align: center;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     &__name:hover{
         text-decoration: 3px underline #8ECAE6;
