@@ -1,7 +1,7 @@
 <template>
-    <span :v-html="headingLevel">
+    <component :is="headingLevel">
         <slot></slot>
-    </span>
+    </component>
 </template>
 <script>
     export default{
