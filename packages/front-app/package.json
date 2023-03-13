@@ -1,5 +1,5 @@
 {
-  "name": "first_nuxt",
+  "name": "front-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,8 @@
     "sass-loader": "^10",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "vue-template-compiler": "^2.7.10",
+    "cross-env": "5.0.5"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.2.1"
