@@ -7,6 +7,9 @@
     </main>
 </template>
 <style>
+html{
+    font-size: 10px;
+}
 .main{
     margin: 0;
     width: 100%;

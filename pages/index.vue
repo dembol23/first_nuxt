@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .image{
     background-image: url("~/assets/img/meble.webp");
     height: 700px;
@@ -35,11 +35,11 @@
     position: relative;
 
   &__text{
-    font-size: 80px;
+    font-size: 8rem;
     position: absolute;
     bottom: 20px;
     left: 10px;
-    color: #fff;
+    color: #FFF;
   }
 }
 .furniture-list{

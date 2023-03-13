@@ -11,14 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 3.5rem;
     padding: 70px 0;
     border-radius: 40px;
     background-color: #AED9ED;
     color: #fff;
 
     &:hover{
-        background-color: #8ecae6;
+        background-color: #8ECAE6;
         cursor: pointer;
     }
     svg{

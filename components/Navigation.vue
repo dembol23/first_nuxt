@@ -6,19 +6,19 @@
         <hr>
     </nav>  
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
     .nav{
-        background-color: #8ecae6;
+        background-color: #8ECAE6;
         display: flex;
         align-items: center;
         color: #fff;
         &__title{
-            font-size: 50px;
+            font-size: 5rem;
             padding: 0;
             margin: 0 30px;
         }
         &__link{
-            padding: 40px;
+            padding: 4rem;
             color: #fff;
             text-transform: uppercase;
             font-size: 20px;
