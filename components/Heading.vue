@@ -13,7 +13,12 @@
         },
         computed:{
             headingLevel(){
-                return 'h' + this.level
+                if(this.level<1 || this.level>6){
+                    return 'h1'
+                }
+                else{
+                    return 'h' + this.level
+                }
             }
         }
     }
