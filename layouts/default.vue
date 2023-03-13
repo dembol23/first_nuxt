@@ -7,12 +7,15 @@
     </main>
 </template>
 <style>
+html{
+    font-size: 10px;
+}
 .main{
     margin: 0;
     width: 100%;
     height: 100%;
 }
 .content{
-    width: 100vw;
+    width: 100%;
 }
 </style> 
