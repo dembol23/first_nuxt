@@ -1,25 +1,13 @@
 {
-  "name": "first_nuxt",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/pwa": "^3.3.5",
-    "core-js": "^3.25.3",
-    "node-sass": "^8.0.0",
-    "nuxt": "^2.15.8",
-    "sass-loader": "^10",
-    "vue": "^2.7.10",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
-  },
-  "devDependencies": {
-    "@nuxtjs/style-resources": "^1.2.1"
+    "private": true,
+    "workspaces": ["packages/*"],
+    "scripts": {
+        "front:dev": "yarn workspace front-app dev",
+        "front:build": "yarn workspace front-app build",
+        "start": "yarn workspace front-app start",
+        "generate": "yarn workspace front-app generate",
+        "ui:dev": "yarn workspace ui-app dev",
+        "ui:build": "yarn workspace ui-app build",
+        "preview": "yarn workspace ui-app preview"
+    }
   }
-}
