@@ -8,17 +8,14 @@
         props:{
             level:{
                 type: Number,
-                required: true
+                required: true,
+                min: 1,
+                max: 6
             } 
         },
         computed:{
             headingLevel(){
-                if(this.level<1 || this.level>6){
-                    return 'h1'
-                }
-                else{
-                    return 'h' + this.level
-                }
+                return 'h' + Math.min(Math.max(this.level,1),6)
             }
         }
     }
