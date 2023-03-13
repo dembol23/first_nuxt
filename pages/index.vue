@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <div>
     <div class="image">
       <a class="image__text">Najlepsze meble w twojej okolicy</a>
     </div>
@@ -21,7 +21,7 @@
         Lampy
       </FurnitureTile> 
     </div>
-  </article>
+  </div>
 </template>
 
 <style lang="scss">

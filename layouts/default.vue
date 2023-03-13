@@ -13,6 +13,6 @@
     height: 100%;
 }
 .content{
-    width: 100vw;
+    width: 100%;
 }
 </style> 

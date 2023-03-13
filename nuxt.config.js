@@ -23,9 +23,6 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
-    dirs: [
-      '~/components'
-    ]
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -37,6 +34,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/axios'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
