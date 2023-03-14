@@ -1,9 +1,9 @@
 <script setup>
-  import Dupa from "./components/Dupa.vue"
+  import Test from "./components/Test.vue"
 </script>
 
 <template>
-  <Dupa></Dupa>
+  <Test></Test>
 </template>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <h1>DUPA</h1>
+  <h1>test</h1>
 </template>
 
 <style scoped>
