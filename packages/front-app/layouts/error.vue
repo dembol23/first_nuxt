@@ -8,10 +8,16 @@
 <script>
     import ErrorPage from 'ui-app/src/components/ErrorPage.vue';
     export default{
-        props : ['error'],
+        props:{
+            error:{
+                type: Object,
+                required:true
+            } 
+        },
         layout: 'error',
         components:{
             ErrorPage
         }
     }
+    // console.warn(typeof(error))
 </script>

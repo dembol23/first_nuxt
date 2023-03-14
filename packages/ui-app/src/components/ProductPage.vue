@@ -1,6 +1,13 @@
 <template>
     <div class="product">
-        <slot></slot>
+      <div class="product__image-wrapper">
+      <img :src="product.image" :alt="product.title" class="product__image">
+    </div>
+    <div class="product__info">
+      <h2 class="product__info__title">{{ product.title }}</h2>
+      <h4 class="product__info__description">{{ product.description }}</h4>
+      <h4 class="product__info__price">{{ product.price }} zł</h4>
+    </div>
     </div>
 </template>
 
@@ -9,12 +16,12 @@
     width: 80%;
     margin: 20px auto;
     display: flex;
-    &__image{
+    &__image-wrapper{
       width: 55%;
       margin-right: 5%;
-      img{
-        width: 100%;
-      }
+    }
+    &__image{
+      width: 100%;
     }
     &__info{
       width: 40%;
@@ -36,3 +43,13 @@
     }
   }
 </style>
+<script>
+  export default{
+    props:{
+      product:{
+        type: Array,
+        required: true
+      }
+    }
+  }
+</script>

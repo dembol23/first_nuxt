@@ -1,11 +1,13 @@
 <template>
-    <Main></Main>
+    <MainContent>
+        <nuxt/>
+    </MainContent>
 </template>
 <script>
-    import Main from 'ui-app/src/components/Main.vue';
+    import MainContent from 'ui-app/src/components/MainContent.vue';
     export default{
         components:{
-            Main
+            MainContent
         }
     }
 </script>

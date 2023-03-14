@@ -2,7 +2,7 @@
     <main class="main">
         <Navigation />
         <div class="content">
-            <nuxt/>
+            <slot></slot>
         </div>
     </main>
 </template>

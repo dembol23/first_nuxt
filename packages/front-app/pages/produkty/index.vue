@@ -1,6 +1,6 @@
 <template>
     <ProductsList>
-      <ProductTile v-for="value in productsList" :key="value.id" :id="value.id" :title="value.title" :description="value.description" :price="value.price.toFixed(2)" :img="value.image"></ProductTile>
+      <ProductTile v-for="value in productsList" :key="value.id" :id="value.id" :title="value.title" :description="value.description" :price="value.price.toFixed(2)" :img="value.image"/>
     </ProductsList>
 </template>
 

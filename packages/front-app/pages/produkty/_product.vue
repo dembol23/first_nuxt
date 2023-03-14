@@ -1,14 +1,5 @@
 <template>
-  <ProductPage>
-    <div class="product__image">
-      <img :src="product.image" :alt="product.title">
-    </div>
-    <div class="product__info">
-      <h2 class="product__info__title">{{ product.title }}</h2>
-      <h4 class="product__info__description">{{ product.description }}</h4>
-      <h4 class="product__info__price">{{ product.price }} zł</h4>
-    </div>
-  </ProductPage>
+  <ProductPage :product="product"/>
 </template>
 
 <script>
