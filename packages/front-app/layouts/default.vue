@@ -1,21 +1,13 @@
 <template>
-    <main class="main">
-        <Navigation />
-        <div class="content">
-            <nuxt/>
-        </div>
-    </main>
+    <MainContent>
+        <nuxt/>
+    </MainContent>
 </template>
-<style>
-html{
-    font-size: 10px;
-}
-.main{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-.content{
-    width: 100%;
-}
-</style> 
+<script>
+    import MainContent from 'ui-app/src/components/MainContent.vue';
+    export default{
+        components:{
+            MainContent
+        }
+    }
+</script>

@@ -1,32 +1,23 @@
 <template>
-    <div>
+    <ErrorPage>
         <h1 v-if="error.statusCode === 404" class="error-title">Page not found</h1>
         <h2 class="error-message">{{ error.message }}</h2>
-        <Heading :level="1">asasas</Heading>
-    </div>
+    </ErrorPage>
 </template>
 
-<style lang="scss" scoped>
-    .error{
-        &-title{
-            text-align: center;
-            margin-top: 100px;
-            font-size: 4rem;
-        }
-        &-message{
-            text-align: center;
-            margin-top: 100px;
-            font-size: 3rem;
-        }
-    }
-    h1{
-        color: red;
-    }
-</style>
-
 <script>
+    import ErrorPage from 'ui-app/src/components/ErrorPage.vue';
     export default{
-        props : ['error'],
-        layout: 'error'
+        props:{
+            error:{
+                type: Object,
+                required:true
+            } 
+        },
+        layout: 'error',
+        components:{
+            ErrorPage
+        }
     }
+    // console.warn(typeof(error))
 </script>
