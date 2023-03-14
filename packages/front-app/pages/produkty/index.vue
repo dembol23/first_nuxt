@@ -1,18 +1,12 @@
 <template>
-    <div class="products">
+    <ProductsList>
       <ProductTile v-for="value in productsList" :key="value.id" :id="value.id" :title="value.title" :description="value.description" :price="value.price.toFixed(2)" :img="value.image"></ProductTile>
-    </div>
+    </ProductsList>
 </template>
-<style lang="scss" scoped>
-.products{
-  width: 90%;
-  margin:50px auto;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-</style>
+
 <script>
+  import ProductTile from 'ui-app/src/components/ProductTile.vue';
+  import ProductsList from 'ui-app/src/components/ProductsList.vue';
   import axios from 'axios';
   export default{
     async asyncData(error){
@@ -27,6 +21,10 @@
         error(err)
       }
       return { productsList }
+    },
+    components:{
+      ProductTile,
+      ProductsList
     }
   }
 </script>
