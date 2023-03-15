@@ -19,5 +19,4 @@
             ErrorPage
         }
     }
-    // console.warn(typeof(error))
 </script>
