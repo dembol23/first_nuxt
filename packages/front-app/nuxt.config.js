@@ -34,7 +34,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-typo3'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -46,5 +47,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  typo3: {
+    baseURL: 'http://localhost:3000',
+    api: {
+      baseURL: 'https://api.t3pwa.com/'
+    },
+    i18n: {
+      locales: ['en'],
+      defaultLocale: 'en'
+    }
   }
 }
